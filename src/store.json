@@ -1,0 +1,275 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "BR001",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-46.633309, -23.55052]
+      },
+      "properties": {
+        "name": "Loja Central São Paulo",
+        "address": "Av. Paulista, 1000 - São Paulo, SP",
+        "city": "São Paulo",
+        "state": "SP",
+        "wikidata": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BR002",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-43.2075, -22.90278]
+      },
+      "properties": {
+        "name": "Loja Rio Downtown",
+        "address": "Rua Visconde de Pirajá, 500 - Rio de Janeiro, RJ",
+        "city": "Rio de Janeiro",
+        "state": "RJ",
+        "wikidata": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BR003",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-38.516667, -3.717222]
+      },
+      "properties": {
+        "name": "Fortaleza Shop Center",
+        "address": "Av. Beira Mar, 200 - Fortaleza, CE",
+        "city": "Fortaleza",
+        "state": "CE",
+        "wikidata": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BR004",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.9253, -14.235]
+      },
+      "properties": {
+        "name": "Brasília Shopping",
+        "address": "SHN Q. 5 - Asa Norte, Brasília, DF",
+        "city": "Brasília",
+        "state": "DF",
+        "wikidata": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BR005",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-48.5671, -27.5954]
+      },
+      "properties": {
+        "name": "Florianópolis Centro",
+        "address": "Rua Felipe Schmidt, 700 - Florianópolis, SC",
+        "city": "Florianópolis",
+        "state": "SC",
+        "wikidata": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BR006",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-35.738063, -9.665877]
+      },
+      "properties": {
+        "name": "Maceió Sul",
+        "address": "Av. da Paz, 1000 - Maceió, AL",
+        "city": "Maceió",
+        "state": "AL",
+        "wikidata": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BR007",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-60.021731, -3.101944]
+      },
+      "properties": {
+        "name": "Manaus Amazonas Shopping",
+        "address": "Av. Djalma Batista, 482 - Manaus, AM",
+        "city": "Manaus",
+        "state": "AM",
+        "wikidata": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BR008",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-40.33762, -20.3155]
+      },
+      "properties": {
+        "name": "Shopping Vitória",
+        "address": "Av. Américo Buaiz, 200 - Vitória, ES",
+        "city": "Vitória",
+        "state": "ES",
+        "wikidata": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RS001",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.2177, -30.0346]
+      },
+      "properties": {
+        "name": "Loja Porto Alegre Centro",
+        "address": "Rua dos Andradas, 1234 - Porto Alegre, RS",
+        "city": "Porto Alegre",
+        "state": "RS",
+        "wikidata": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RS002",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.1849, -30.0356]
+      },
+      "properties": {
+        "name": "Shopping Iguatemi Porto Alegre",
+        "address": "Av. João Wallig, 1800 - Porto Alegre, RS",
+        "city": "Porto Alegre",
+        "state": "RS",
+        "wikidata": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RS003",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.0915, -29.6895]
+      },
+      "properties": {
+        "name": "Loja Canoas Park",
+        "address": "Av. Guilherme Schell, 3000 - Canoas, RS",
+        "city": "Canoas",
+        "state": "RS",
+        "wikidata": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RS004",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.5325, -29.3722]
+      },
+      "properties": {
+        "name": "Loja Novo Hamburgo Shopping",
+        "address": "Rua Magalhães Calvet, 500 - Novo Hamburgo, RS",
+        "city": "Novo Hamburgo",
+        "state": "RS",
+        "wikidata": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RS005",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.4172, -29.6908]
+      },
+      "properties": {
+        "name": "Shopping Santa Cruz",
+        "address": "Av. Sen. Pinheiro Machado, 100 - Santa Cruz do Sul, RS",
+        "city": "Santa Cruz do Sul",
+        "state": "RS",
+        "wikidata": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RS006",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-50.8781, -29.3759]
+      },
+      "properties": {
+        "name": "Loja Gramado",
+        "address": "Av. Borges de Medeiros, 2500 - Gramado, RS",
+        "city": "Gramado",
+        "state": "RS",
+        "wikidata": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RS007",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-53.5047, -29.7181]
+      },
+      "properties": {
+        "name": "Loja Centro Santa Maria",
+        "address": "Rua Dr. Bozano, 1300 - Santa Maria, RS",
+        "city": "Santa Maria",
+        "state": "RS",
+        "wikidata": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RS008",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-51.7653, -30.9122]
+      },
+      "properties": {
+        "name": "Loja Guaíba Shopping",
+        "address": "Rua 7 de Setembro, 900 - Guaíba, RS",
+        "city": "Guaíba",
+        "state": "RS",
+        "wikidata": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RS009",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.3425, -31.7654]
+      },
+      "properties": {
+        "name": "Loja Pelotas Center",
+        "address": "Av. Bento Gonçalves, 300 - Pelotas, RS",
+        "city": "Pelotas",
+        "state": "RS",
+        "wikidata": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "RS010",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-53.3902, -25.2944]
+      },
+      "properties": {
+        "name": "Loja Caxias do Sul",
+        "address": "Rua Sinimbu, 800 - Caxias do Sul, RS",
+        "city": "Caxias do Sul",
+        "state": "RS",
+        "wikidata": null
+      }
+    }
+  ]
+}
