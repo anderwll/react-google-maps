@@ -1,11 +1,12 @@
+import AppBar from "./AppBar";
 import MapProvider from "./MapProvider";
 
 function App() {
   return (
-    <div>
-      <h1>Example React Google Maps</h1>
+    <section>
+      <AppBar />
       <MapProvider />
-    </div>
+    </section>
   );
 }
 

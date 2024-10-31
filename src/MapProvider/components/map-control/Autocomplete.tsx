@@ -97,7 +97,7 @@ export default function Autocomplete({ onPlaceSelect }: Props) {
         placeholder="Pesquisar..."
         value={inputValue}
         onInput={(event: FormEvent<HTMLInputElement>) => onInputChange(event)}
-        className="p-3 rounded mt-4 w-96 border-2"
+        className="w-[95vw] p-3 rounded mt-4 sm:w-96 border-2"
       />
       {inputValue && (
         <span
