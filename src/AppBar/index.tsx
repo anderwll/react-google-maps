@@ -1,14 +1,24 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Icon from "./Icon";
 
-export default function AppBar() {
+interface AppBarProps {
+  children?: React.ReactNode;
+}
+
+export default function AppBar({ children }: AppBarProps) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="bg-zinc-600 p-4 flex justify-between items-center">
-      <div className="text-white text-lg">React Google Maps</div>
+    <div className="fixed top-0 inset-x-0 p-4 flex  items-start justify-between">
+      <div className="hidden text-zinc-950 text-lg sm:block">
+        React Google Maps
+      </div>
+      {children}
       <div className="relative">
-        <button className="text-white" onClick={() => setMenuOpen(!menuOpen)}>
+        <button
+          className="text-zinc-400 bg-white p-3 border rounded"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
           <Icon open={menuOpen} />
         </button>
         {menuOpen && (
