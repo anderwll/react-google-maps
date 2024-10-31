@@ -1,4 +1,4 @@
-import { useCallback, useEffect } from "react";
+import { useCallback } from "react";
 import Supercluster, { ClusterProperties } from "supercluster";
 import { FeaturesClusterMarker } from "./FeaturesClusterMarker";
 import { FeatureMarker } from "./FeatureMarker";
@@ -7,7 +7,6 @@ import { Feature, FeatureCollection, GeoJsonProperties, Point } from "geojson";
 
 type ClusteredMarkersProps = {
   geojson: FeatureCollection<Point>;
-  setNumClusters: (n: number) => void;
   setInfowindowData: (
     data: {
       anchor: google.maps.marker.AdvancedMarkerElement;
@@ -27,14 +26,9 @@ const superclusterOptions: Supercluster.Options<
 
 export default function ClusteredMarkers({
   geojson,
-  setNumClusters,
   setInfowindowData,
 }: ClusteredMarkersProps) {
   const { clusters, getLeaves } = useSupercluster(geojson, superclusterOptions);
-
-  useEffect(() => {
-    setNumClusters(clusters.length);
-  }, [setNumClusters, clusters.length]);
 
   const handleClusterClick = useCallback(
     (marker: google.maps.marker.AdvancedMarkerElement, clusterId: number) => {
