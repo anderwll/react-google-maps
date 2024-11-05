@@ -2,8 +2,9 @@ import {
   ControlPosition,
   MapControl as MapControlApi,
 } from "@vis.gl/react-google-maps";
+import { useMediaQuery } from "usehooks-ts";
 import Autocomplete from "./Autocomplete";
-import AppBar from "../../../AppBar";
+import { useMemo } from "react";
 
 interface MapControlProps {
   setSelectedPlace: React.Dispatch<
@@ -12,12 +13,17 @@ interface MapControlProps {
 }
 
 export default function MapControl({ setSelectedPlace }: MapControlProps) {
+  const isMobile = useMediaQuery("(max-width: 640px)");
+
+  const position = useMemo(
+    () => (isMobile ? ControlPosition.LEFT_TOP : ControlPosition.TOP_CENTER),
+    [isMobile]
+  );
+
   return (
-    <MapControlApi position={ControlPosition.TOP_CENTER}>
+    <MapControlApi position={position}>
       <div className="autocomplete-control">
-        <AppBar>
-          <Autocomplete onPlaceSelect={setSelectedPlace} />
-        </AppBar>
+        <Autocomplete onPlaceSelect={setSelectedPlace} />
       </div>
     </MapControlApi>
   );

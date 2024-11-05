@@ -31,7 +31,7 @@ export const FeatureMarker = ({
       position={position}
       onClick={handleClick}
       anchorPoint={AdvancedMarkerAnchorPoint.CENTER}
-      className={"marker feature"}
+      className="marker feature"
     >
       <img src="/loja.png" alt="loja" />
     </AdvancedMarker>

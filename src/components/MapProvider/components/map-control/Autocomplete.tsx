@@ -1,5 +1,6 @@
 import { useEffect, useState, FormEvent, useCallback } from "react";
 import { useMap, useMapsLibrary } from "@vis.gl/react-google-maps";
+import CloseIcon from "./CloseIcon";
 
 interface Props {
   onPlaceSelect: (place: google.maps.places.PlaceResult | null) => void;
@@ -92,35 +93,19 @@ export default function Autocomplete({ onPlaceSelect }: Props) {
   );
 
   return (
-    <div className="autocomplete-container text-base">
-      <div className="w-full relative">
+    <div className="w-min autocomplete-container text-base mt-4 ml-4 sm:ml-0">
+      <div className="w-min relative">
         <input
           placeholder="Pesquisar..."
           value={inputValue}
           onInput={(event: FormEvent<HTMLInputElement>) => onInputChange(event)}
           className="p-3 rounded sm:w-96 border-2"
         />
-        {inputValue && (
-          <span
-            className="bg-white absolute right-2 top-[0.80rem] cursor-pointer hover:bg-zinc-200 rounded-full p-1"
-            onClick={onClearInput}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-            >
-              <path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"></path>
-            </svg>
-          </span>
-        )}
+        {inputValue && <CloseIcon onClick={onClearInput} />}
       </div>
 
       {predictionResults.length > 0 && (
-        <ul className="custom-list w-full sm:w-96 p-3 bg-white rounded-b flex flex-col justify-center items-center">
+        <ul className="custom-list w-[92vw] sm:w-96 p-3 bg-white rounded-b flex flex-col justify-center items-center">
           {predictionResults.map(({ place_id, description }) => {
             return (
               <li

@@ -3,7 +3,7 @@ import { APIProvider, Map } from "@vis.gl/react-google-maps";
 import { Feature, FeatureCollection, Point } from "geojson";
 
 // import castles from "../castels.json";
-import store from "../store.json";
+import store from "../../store.json";
 import MapHandler from "./components/map-handler";
 import MapControl from "./components/map-control";
 import ClusteredMarkers from "./components/clustered-markers";
