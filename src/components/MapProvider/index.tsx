@@ -1,13 +1,11 @@
 import { useCallback, useEffect, useState } from "react";
 import { APIProvider, Map } from "@vis.gl/react-google-maps";
 import { Feature, FeatureCollection, Point } from "geojson";
-
-// import castles from "../castels.json";
-import store from "../../store.json";
 import MapHandler from "./components/map-handler";
 import MapControl from "./components/map-control";
 import ClusteredMarkers from "./components/clustered-markers";
 import InfoWindow from "./components/info-window";
+import { getStores } from "../../services/api.service";
 
 export type StoreFeatureProps = {
   name: string;
@@ -38,7 +36,12 @@ export default function MapProvider() {
   );
 
   useEffect(() => {
-    setGeojson(JSON.parse(JSON.stringify(store)));
+    async function fetchGeojson() {
+      const response = await getStores();
+      setGeojson(response);
+    }
+
+    fetchGeojson();
   }, []);
 
   return (
