@@ -47,7 +47,8 @@ export default function MapProvider() {
   return (
     <APIProvider apiKey={API_KEY}>
       <Map
-        mapId="b5387d230c6cf22f"
+        // mapId="b5387d230c6cf22f" // Map grey style
+        mapId="e7f00e4f77c30c63" // Map simple style
         disableDefaultUI
         defaultZoom={3.3}
         gestureHandling="greedy"
