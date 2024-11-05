@@ -1,6 +1,6 @@
 import { useEffect, useState, FormEvent, useCallback } from "react";
 import { useMap, useMapsLibrary } from "@vis.gl/react-google-maps";
-import CloseIcon from "./CloseIcon";
+import CloseIcon from "../../../../assets/icons/CloseIcon";
 
 interface Props {
   onPlaceSelect: (place: google.maps.places.PlaceResult | null) => void;

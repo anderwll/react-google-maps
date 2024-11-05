@@ -2,7 +2,7 @@ interface IconProps {
   open: boolean;
 }
 
-export default function Icon({ open }: IconProps) {
+export default function MenuIcon({ open }: IconProps) {
   if (open) {
     return (
       <svg

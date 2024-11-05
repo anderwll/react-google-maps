@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Icon from "./Icon";
+import MenuIcon from "../../assets/icons/MenuIcon";
 
 interface AppBarProps {
   children?: React.ReactNode;
@@ -14,7 +14,7 @@ export default function AppBar({ children }: AppBarProps) {
         className="text-zinc-300 bg-white p-3 border rounded"
         onClick={() => setMenuOpen(!menuOpen)}
       >
-        <Icon open={menuOpen} />
+        <MenuIcon open={menuOpen} />
       </button>
       {menuOpen && (
         <div className="z-50 absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-2 text-base">
